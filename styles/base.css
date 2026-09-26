@@ -6,32 +6,14 @@
   padding: 0;
 }
 
-:root {
-  --color-ink: #0f0f12;
-  --color-ink-raised: #1a1a1f;
-  --color-line: #2a2a30;
-  --color-grey-700: #55555e;
-  --color-grey-500: #6b6b75;
-  --color-grey-400: #a3a3ab;
-  --color-grey-200: #c9c9c2;
-  --color-paper: #f3f3ee;
-  --color-lime: #dbfe66;
-  --color-pink: #fd7ee7;
-  --color-teal: #2dc6a9;
-
-  --color-brand: var(--color-lime);
-  --color-accent-1: var(--color-pink);
-  --color-accent-2: var(--color-teal);
-
-  --color-bg-base: var(--color-ink);
-  --color-bg-surface: var(--color-ink-raised);
-
-  --color-text-primary: var(--color-paper);
-  --color-text-secondary: var(--color-grey-200);
-  --color-text-muted: var(--color-grey-400);
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.title--brand {
-  color: var(--color-brand);
-  font-family: "Geist Pixel", sans-serif;
+body {
+  min-height: 100dvh;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }

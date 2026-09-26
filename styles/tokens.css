@@ -1,0 +1,39 @@
+:root {
+  --color-ink: #0f0f12;
+  --color-ink-raised: #1a1a1f;
+  --color-line: #2a2a30;
+  --color-grey-700: #55555e;
+  --color-grey-500: #6b6b75;
+  --color-grey-400: #a3a3ab;
+  --color-grey-200: #c9c9c2;
+  --color-paper: #f3f3ee;
+  --color-lime: #dbfe66;
+  --color-pink: #fd7ee7;
+  --color-teal: #2dc6a9;
+
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --font-pixel: "Geist Pixel", "Geist Mono", monospace;
+
+  --text-body: 1rem;
+  --text-hero-h1: 2.06rem;
+  --text-h2: 2.5rem;
+
+  --lh-body: 1.45;
+  --lh-hero-h1: 1.2;
+
+  --tracking-heading: -0.04em;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --text-body: 1.125rem;
+    --text-hero-h1: 5.42rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --text-hero-h1: 6rem;
+  }
+}
