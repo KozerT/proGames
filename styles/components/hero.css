@@ -1,7 +1,0 @@
-.hero__title {
-  font-family: var(--font-pixel);
-  font-size: var(--text-hero-h1);
-  line-height: var(--lh-hero-h1);
-  letter-spacing: var(--tracking-heading);
-  font-weight: 400;
-}
