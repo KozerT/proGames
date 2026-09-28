@@ -1,2 +1,42 @@
-.btn {
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-lime);
+  color: var(--color-ink);
+  gap: 8px;
+  border: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: var(--tracking-button);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition:
+    background-color var(--dur-2) var(--ease-out),
+    color var(--dur-2) var(--ease-out),
+    translate var(--dur-2) var(--ease-out);
+}
+
+.button:hover {
+  background-color: var(--color-paper);
+}
+
+.button:active {
+  translate: 0 1px;
+}
+
+.button--header {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 13px;
+  background-color: var(--color-lime);
+  color: var(--color-ink);
+}
+
+.button--block {
+  display: flex;
+  width: 100%;
+  padding: 0 24px;
+  height: 48px;
+  font-size: 1.0625rem;
 }

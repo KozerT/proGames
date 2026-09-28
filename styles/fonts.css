@@ -340,3 +340,9 @@
   font-style: normal;
   font-display: swap;
 }
+
+:root {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --font-pixel: "Geist Pixel", "Geist Mono", monospace;
+}

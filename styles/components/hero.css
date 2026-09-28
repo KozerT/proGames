@@ -5,7 +5,3 @@
   letter-spacing: var(--tracking-heading);
   font-weight: 400;
 }
-
-.hero__title--pink {
-  color: var(--color-pink);
-}

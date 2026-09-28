@@ -17,3 +17,19 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
 }
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  height: 1.5rem;
+  width: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 2rem;
+  }
+}

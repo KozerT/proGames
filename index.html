@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>PRO.school: Online Courses for Creative Professions</title>
     <link rel="icon" href="./favicon.ico" sizes="32x32" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -11,17 +10,46 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__bar">
+        <a href="#content" aria-label="Pro.school, home" class="header__logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="PRO.school logo"
+            class="logo"
+          />
+        </a>
+        <nav class="header__nav">
+          <a href="./about/indxe.html" class="header__nav--link">about</a>
+          <a href="./courses/index.html" class="header__nav--link">courses</a>
+          <a href="#faq" class="header__nav--link">faq</a>
+          <a href="#apply" class="button button--header header__cta">apply</a>
+        </nav>
+        <button
+          class="header__burger"
+          type="button"
+          aria-label="Menu"
+          aria-controls="header-menu"
+          popovertarget="header-menu"
+        >
+          <span class="header__burger-bar"></span>
+          <span class="header__burger-bar"></span>
+          <span class="header__burger-bar"></span>
+        </button>
+        <nav class="header__menu" id="header-menu" popover aria-label="Main">
+          <a class="header__menu-link" href="#about">about</a>
+          <a class="header__menu-link" href="#courses">courses</a>
+          <a class="header__menu-link" href="#faq">faq</a>
+          <div class="header__menu-action">
+            <a class="button button--block" href="#apply">apply</a>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
-      <h1 class="hero__title hero__title--pink">This is main page</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-        tempore quis quidem magnam aut harum illo quia. Deserunt minima numquam
-        labore impedit exercitationem ab facilis odio quia consectetur nihil?
-        Obcaecati.
-      </p>
-      <nav class="nav">
-        <a href="./courses/index.html" class="nav__link">See Courses</a>
-      </nav>
+      <section id="content" class="hero">
+        <div></div>
+      </section>
     </main>
   </body>
 </html>
