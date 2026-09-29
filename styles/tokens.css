@@ -21,6 +21,7 @@
   --text-h2: 2.5rem;
   --text-tag: 0.875rem;
   --text-strip: 1.0625rem;
+  --text-marquee: 1.5rem;
 
   --lh-h1: 1.2;
   --lh-lead: 1.2;
@@ -29,6 +30,7 @@
 
   --tracking-heading: -0.04em;
   --tracking-button: 0.02em;
+  --tracking-marquee: 0.01em;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -51,6 +53,7 @@
   --hero-pad-bottom: 2.5rem;
   --hero-gap: 1.875rem;
   --hero-copy-gap: 1.5rem;
+  --marquee-group-gap: 1.25rem;
 
   --gutter: 1rem;
 
@@ -70,6 +73,7 @@
     --text-body: 1.125rem;
     --text-lead: 1.38rem;
     --text-hero-h1: 5.42rem;
+    --text-marquee: 2.59rem;
 
     --header-gap: 2rem;
     --hero-title-gap: 2.5rem;
@@ -91,11 +95,13 @@
     --text-lead: 1.75rem;
     --text-nav: 1rem;
     --text-tag: 1rem;
+    --text-marquee: 4.25rem;
 
     --hero-title-gap: 4.5rem;
     --hero-pad-bottom: 4.5rem;
     --hero-gap: 4rem;
     --hero-copy-gap: 2.5rem;
+    --marquee-group-gap: 2.338rem;
 
     --gutter: 2.5rem;
 
