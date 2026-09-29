@@ -11,8 +11,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__bar">
-        <a href="#content" aria-label="Pro.school, home" class="header__logo">
+      <div class="header__bar container">
+        <a href="#main" aria-label="Pro.school, home" class="header__logo">
           <img
             src="./assets/images/logo.svg"
             alt="PRO.school logo"
@@ -37,18 +37,58 @@
           <span class="header__burger-bar"></span>
         </button>
         <nav class="header__menu" id="header-menu" popover aria-label="Main">
-          <a class="header__menu-link" href="#about">about</a>
-          <a class="header__menu-link" href="#courses">courses</a>
-          <a class="header__menu-link" href="#faq">faq</a>
-          <div class="header__menu-action">
+          <a class="header__menu--link" href="#about">about</a>
+          <a class="header__menu--link" href="#courses">courses</a>
+          <a class="header__menu--link" href="#faq">faq</a>
+          <div class="header__menu--action">
             <a class="button button--block" href="#apply">apply</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <section id="content" class="hero">
-        <div></div>
+      <section id="main" class="hero hero--home">
+        <div class="hero__container container">
+          <p class="eyebrow">
+            <span class="eyebrow__item"
+              >( <span class="eyebrow__label">game dev</span> )</span
+            >
+            <span class="eyebrow__item"
+              >( <span class="eyebrow__label">3D &amp; motion</span> )</span
+            >
+            <span class="eyebrow__item"
+              >( <span class="eyebrow__label">creative web</span> )</span
+            >
+          </p>
+          <h1 class="hero__title">
+            <span class="hero__title-lines">
+              <span class="hero__title-line">your first</span>
+              <span class="hero__title-line">step into the</span>
+              <span class="hero__title-line">creative industry</span>
+            </span>
+          </h1>
+          <div class="hero__body">
+            <div class="hero__copy">
+              <p class="hero__subheading">
+                Learn from working studios, finish a real project, get your
+                first portfolio piece.
+              </p>
+              <a class="button button--link" href="#courses">
+                upcoming courses
+                <span class="button__icon" aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="hero__media">
+              <img
+                src="./assets/images/hero-retro-computer.jpeg"
+                alt="Retro computer with a pixel game on screen"
+                class="hero__image"
+                width="1024"
+                height="646"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>

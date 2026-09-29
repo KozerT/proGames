@@ -1,0 +1,20 @@
+.eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(12px, 1.6vw, 20px);
+  margin: 0 0 16px;
+  font-family: var(--font-mono);
+  font-size: var(--text-tag);
+  line-height: var(--lh-tag);
+  color: var(--color-lime);
+  text-transform: lowercase;
+}
+
+.eyebrow__item {
+  white-space: nowrap;
+}
+
+.eyebrow__label {
+  font-weight: 700;
+  color: var(--color-paper);
+}

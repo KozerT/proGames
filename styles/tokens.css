@@ -11,12 +11,21 @@
   --color-pink: #fd7ee7;
   --color-teal: #2dc6a9;
 
-  --text-body: 1rem;
-  --text-hero-h1: 2.06rem;
-  --text-h2: 2.5rem;
+  --layout-max: 1440px;
 
+  --text-hero-h1: 2.4rem;
+  --text-body: 1rem;
+  --text-lead: 1.25rem;
+  --text-nav: 0.875rem;
+  --text-menu-link: 1.125rem;
+  --text-h2: 2.5rem;
+  --text-tag: 0.875rem;
+  --text-strip: 1.0625rem;
+
+  --lh-h1: 1.2;
+  --lh-lead: 1.2;
   --lh-body: 1.45;
-  --lh-hero-h1: 1.2;
+  --lh-tag: 1.3;
 
   --tracking-heading: -0.04em;
   --tracking-button: 0.02em;
@@ -33,8 +42,18 @@
   --space-10: 7.5rem;
 
   --header-h: 54px;
+  --header-gap: 1.5rem;
+  --hero-subhead-gap: 1.5rem;
+  --header-burger-gap: 0.313rem;
+
+  --hero-title-gap: 2.3rem;
+  --hero-pad-top: 1.75rem;
+  --hero-pad-bottom: 2.5rem;
+  --hero-gap: 1.875rem;
+  --hero-copy-gap: 1.5rem;
 
   --gutter: 1rem;
+
   --nav-gap: 0.875rem;
   --tap-area: 48px;
 
@@ -49,9 +68,18 @@
 @media (min-width: 768px) {
   :root {
     --text-body: 1.125rem;
+    --text-lead: 1.38rem;
     --text-hero-h1: 5.42rem;
 
-    --gutter: 1.5rem;
+    --header-gap: 2rem;
+    --hero-title-gap: 2.5rem;
+    --hero-pad-top: 2.5rem;
+    --hero-pad-bottom: 3.5rem;
+    --hero-gap: 3rem;
+    --hero-copy-gap: 2rem;
+    --hero-subhead-gap: 2rem;
+
+    --gutter: 1.4rem;
     --nav-gap: 1.25rem;
   }
 }
@@ -59,8 +87,18 @@
 @media (min-width: 1440px) {
   :root {
     --text-hero-h1: 6rem;
+    --text-body: 1.25rem;
+    --text-lead: 1.75rem;
+    --text-nav: 1rem;
+    --text-tag: 1rem;
+
+    --hero-title-gap: 4.5rem;
+    --hero-pad-bottom: 4.5rem;
+    --hero-gap: 4rem;
+    --hero-copy-gap: 2.5rem;
 
     --gutter: 2.5rem;
+
     --nav-gap: 2rem;
   }
 }
