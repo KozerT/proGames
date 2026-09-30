@@ -51,11 +51,11 @@
   font-family: var(--font-sans);
   font-weight: 400;
   font-size: var(--text-lead);
-  line-height: var(--lh-lead);
+  line-height: var(--lh-subheading);
   color: var(--color-paper);
 }
 
-.button--link {
+.button__hero {
   color: var(--color-paper);
 
   &:hover {
@@ -71,7 +71,7 @@
 .hero__image {
   width: 100%;
   height: auto;
-  aspect-ratio: 358 / 226;
+  aspect-ratio: var(--ratio-landscape);
   max-height: 300px;
   object-fit: cover;
 }
@@ -96,7 +96,7 @@
     max-width: 30ch;
   }
 
-  .button--link {
+  .button__link {
     align-self: flex-start;
   }
 

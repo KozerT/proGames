@@ -1,0 +1,15 @@
+.tag__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-tag);
+  line-height: 1.3;
+  color: var(--color-grey-700);
+  text-transform: lowercase;
+}
+
+.courses__tag {
+  white-space: nowrap;
+}

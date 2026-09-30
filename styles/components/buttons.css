@@ -1,3 +1,9 @@
+/* TODO: improve btn types hierarchy: 
+--primary
+--secondary
+--link
+--icon */
+
 .button {
   --btn-bg: var(--color-lime);
   --btn-text: var(--color-ink);
@@ -33,20 +39,20 @@
   display: inline-block;
 }
 
-.button--header {
+.button__header {
   height: 32px;
   padding: 0 12px;
   font-size: var(--text-nav);
 }
 
-.button--block {
+.button__block {
   display: flex;
   padding: 0 24px;
   height: 48px;
   font-size: var(--text-btn-block);
 }
 
-.button--link {
+.button__link {
   background-color: transparent;
   color: currentColor;
   gap: 10px;

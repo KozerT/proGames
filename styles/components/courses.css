@@ -1,0 +1,119 @@
+.courses {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.courses__title {
+  padding: 32px var(--gutter) 24px;
+  color: var(--color-ink);
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  font-size: var(--text-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--tracking-heading);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.courses__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.courses-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px var(--gutter);
+}
+
+.courses__row-title {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: var(--text-h3-courses);
+  line-height: var(--lh-h2-section);
+  letter-spacing: var(--tracking-heading-h2);
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.courses__row-subtitle {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--text-body);
+  color: var(--color-ink);
+  line-height: var(--text-lead);
+}
+
+.courses__row-text {
+  max-width: 52ch;
+  font-family: var(sans);
+  font-weight: 400;
+  font-size: var(--text-body);
+  line-height: var(--lh-body);
+  color: var(--color-grey-700);
+}
+
+.courses__row-cta {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  color: var(--color-ink);
+
+  &:hover {
+    color: var(--color-grey-700);
+  }
+}
+
+.courses__media {
+  order: -1;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter) 12px;
+}
+
+.courses__image {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  aspect-ratio: var(--ratio-portrait);
+}
+
+@media (min-width: 768px) {
+  .courses__container {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    align-items: stretch;
+  }
+
+  .courses__row {
+    padding: 24px 20px;
+  }
+
+  .courses__row-cta {
+    margin-top: 4.6px;
+  }
+
+  .courses__media {
+    order: 0;
+    padding: 0 0 12.3px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .courses__title {
+    padding: 57.6px var(--gutter) 43.2px;
+  }
+
+  .courses__row {
+    gap: 10px;
+    padding: 43.2px 37.4px;
+  }
+
+  .courses__row-cta {
+    margin-top: 8px;
+  }
+
+  .courses__media {
+    padding-bottom: 23px;
+  }
+}

@@ -9,10 +9,6 @@
   flex-direction: column;
 }
 
-/*TODO:  try aside for making btn element be out of the container and be shown as last. As order prop only works on elements that are directly inside the exact same flex or grid container and cannot make an element jump out of its parent wrapper. 
-but display: contents may cause ccessibility Bug for li elements. Safe for divs. 
-*/
-
 .about__aside {
   display: contents;
 }
@@ -31,8 +27,8 @@ but display: contents may cause ccessibility Bug for li elements. Safe for divs.
   font-family: var(--font-sans);
   font-weight: 800;
   font-size: var(--text-h2-about);
-  line-height: var(--lh-h2-about);
-  letter-spacing: var(--tracking-heading-about);
+  line-height: var(--lh-h2-section);
+  letter-spacing: var(--tracking-heading-2);
   text-transform: uppercase;
   color: var(--color-paper);
   text-wrap: balance;
@@ -138,7 +134,7 @@ but display: contents may cause ccessibility Bug for li elements. Safe for divs.
   }
 
   .about__card {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: var(--ratio-square);
     gap: 28px;
     padding: 31.7px;
   }
