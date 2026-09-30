@@ -41,10 +41,9 @@
 
 .button--block {
   display: flex;
-  width: 100%;
   padding: 0 24px;
   height: 48px;
-  font-size: 1.0625rem;
+  font-size: var(--text-btn-block);
 }
 
 .button--link {
@@ -52,7 +51,7 @@
   color: currentColor;
   gap: 10px;
   padding-bottom: 4px;
-  font-size: var(--text-strip);
+  font-size: var(--text-btn-block);
   border-bottom: 1px solid currentColor;
   transition:
     transform var(--dur-2) var(--ease-out),
