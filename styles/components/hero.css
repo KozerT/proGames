@@ -10,7 +10,7 @@
   margin: 0 0 var(--hero-title-gap);
   text-transform: uppercase;
   font-family: var(--font-pixel);
-  font-size: var(--text-hero-h1);
+  font-size: var(--text-h1-hero);
   font-weight: 400;
   line-height: var(--lh-h1);
   color: var(--color-lime);

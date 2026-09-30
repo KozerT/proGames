@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+/*TODO:  try aside for making btn element be out of the container and be shown as last. As order prop only works on elements that are directly inside the exact same flex or grid container and cannot make an element jump out of its parent wrapper. 
+but display: contents may cause ccessibility Bug for li elements. Safe for divs. 
+*/
+
 .about__aside {
   display: contents;
 }
@@ -47,6 +51,7 @@
 .about__action {
   order: 3;
   padding: 24px var(--gutter) 32px;
+  width: 100%;
 }
 
 .about__cards {
@@ -75,7 +80,7 @@
 .about__card-index {
   font-family: var(--font-sans);
   font-weight: 900;
-  font-size: 2.25rem;
+  font-size: var(--text-card-index);
   line-height: 0.8;
   letter-spacing: var(--tracking-heading);
   color: var(--color-ink);
@@ -85,7 +90,7 @@
   margin: 0;
   font-family: var(--font-sans);
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: var(--text-h3-about);
   line-height: 1.15;
   letter-spacing: var(--tracking-heading);
   text-transform: uppercase;
@@ -108,16 +113,15 @@
 @media (min-width: 768px) {
   .about__container {
     display: grid;
-    grid-template-columns: var(--column-ratio);
+    grid-template-columns: 3fr 5fr;
     align-items: stretch;
   }
-
   .about__aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: var(--space-8);
-    padding: 28px 20px 28px var(--gutter);
+    padding: 49px 37.4px 49px var(--gutter);
     border-right: 1px solid var(--color-line);
   }
 
@@ -125,9 +129,8 @@
     padding: 0;
   }
 
-  .about__action {
-    margin-top: 32px;
-    padding: 0 0 4px;
+  .about__label {
+    margin-bottom: 32px;
   }
 
   .about__cards {
@@ -136,36 +139,7 @@
 
   .about__card {
     aspect-ratio: 1 / 1;
-  }
-}
-
-@media (min-width: 1440px) {
-  .about__aside {
-    padding: 49px 37.4px 49px var(--gutter);
-  }
-
-  .about__label {
-    margin-bottom: 32px;
-  }
-
-  .about__action {
-    margin-top: 57.6px;
-  }
-
-  .about__card {
     gap: 28px;
     padding: 31.7px;
-  }
-
-  .about__card-index {
-    font-size: 4.14rem;
-  }
-
-  .about__card-title {
-    font-size: 1.115rem;
-  }
-
-  .about__card-text {
-    margin-top: 16px;
   }
 }
