@@ -29,7 +29,7 @@
   --text-tag: 0.875rem;
   --text-btn-block: 1.0625rem;
   --text-marquee: 1.5rem;
-
+  --text-marquee-lime: 1.15rem;
   --lh-h1: 1.2;
   --lh-h2: 1.12;
   --lh-h2-section: 1.05;
@@ -91,6 +91,7 @@
     --text-h3-about: 1.12rem;
     --text-h3-courses: 1.425rem;
     --text-marquee: 2.59rem;
+    --text-marquee-lime: 1.63rem;
     --text-card-index: 4.14rem;
 
     --header-gap: 2rem;

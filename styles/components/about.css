@@ -129,6 +129,10 @@
     margin-bottom: 32px;
   }
 
+  .about__action {
+    padding: 0;
+  }
+
   .about__cards {
     grid-template-columns: repeat(2, 1fr);
   }
