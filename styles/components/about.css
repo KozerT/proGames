@@ -23,10 +23,9 @@
 }
 
 .about__title {
-  margin: 0;
   font-family: var(--font-sans);
   font-weight: 800;
-  font-size: var(--text-h2-about);
+  font-size: var(--text-h2-secondary);
   line-height: var(--lh-h2-section);
   letter-spacing: var(--tracking-heading-2);
   text-transform: uppercase;
@@ -83,7 +82,6 @@
 }
 
 .about__card-title {
-  margin: 0;
   font-family: var(--font-sans);
   font-weight: 800;
   font-size: var(--text-h3-about);

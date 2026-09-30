@@ -3,7 +3,7 @@
 }
 
 .hero__container {
-  padding: var(--hero-pad-top) var(--gutter) var(--hero-pad-bottom);
+  padding: var(--hero-pad-top) 0 var(--hero-pad-bottom);
 }
 
 .hero__title {
@@ -47,7 +47,6 @@
 
 .hero__subheading {
   max-width: 38ch;
-  margin: 0;
   font-family: var(--font-sans);
   font-weight: 400;
   font-size: var(--text-lead);

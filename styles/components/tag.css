@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0;
   font-family: var(--font-mono);
   font-size: var(--text-tag);
   line-height: 1.3;

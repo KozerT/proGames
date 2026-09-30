@@ -22,7 +22,7 @@
   font-weight: 400;
   font-size: var(--text-marquee);
   line-height: 1;
-  letter-spacing: var(--tracking-marquee);
+  letter-spacing: var(--tracking-medium);
   text-transform: uppercase;
   white-space: nowrap;
 }
