@@ -1,37 +1,37 @@
-/* TODO: improve btn types hierarchy: 
---primary
---secondary
---link
---icon */
-
 .button {
   --btn-bg: var(--color-lime);
   --btn-text: var(--color-ink);
   --btn-hover-bg: var(--color-paper);
+  --btn-hover-text: var(--btn-text);
+  --btn-hover-shift: 0 0;
+  --btn-active-shift: 0 1px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: var(--space-2);
+  border: none;
   background-color: var(--btn-bg);
   color: var(--btn-text);
-  gap: 8px;
-  border: none;
   font-family: var(--font-sans);
   font-weight: 700;
   letter-spacing: var(--tracking-button);
-  cursor: pointer;
   text-transform: uppercase;
+  cursor: pointer;
   transition:
     background-color var(--dur-2) var(--ease-out),
     color var(--dur-2) var(--ease-out),
+    border-color var(--dur-2) var(--ease-out),
     translate var(--dur-2) var(--ease-out);
 
   &:hover {
-    background-color: var(--color-paper);
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    translate: var(--btn-hover-shift);
   }
 
   &:active {
-    translate: 0 1px;
+    translate: var(--btn-active-shift);
   }
 }
 
@@ -39,38 +39,34 @@
   display: inline-block;
 }
 
-.button__header {
+.button--link {
+  --btn-bg: transparent;
+  --btn-hover-bg: transparent;
+  --btn-text: currentColor;
+  --btn-hover-shift: 6px 0;
+  --btn-active-shift: 6px 0;
+
+  gap: 10px;
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid currentColor;
+  font-size: var(--text-btn-block);
+}
+
+/* Sizes */
+
+.button--sm {
   height: 32px;
-  padding: 0 12px;
+  padding: 0 var(--space-3);
   font-size: var(--text-nav);
 }
 
-.button__block {
-  display: flex;
-  padding: 0 24px;
-  height: 48px;
+.button--lg {
+  height: var(--tap-area);
+  padding: 0 var(--space-5);
   font-size: var(--text-btn-block);
 }
 
-.button__link {
-  background-color: transparent;
-  color: currentColor;
-  gap: 10px;
-  padding-bottom: 4px;
-  font-size: var(--text-btn-block);
-  border-bottom: 1px solid currentColor;
-  transition:
-    transform var(--dur-2) var(--ease-out),
-    color var(--dur-2) var(--ease-out),
-    border-color var(--dur-2) var(--ease-out);
-
-  &:hover {
-    background-color: transparent;
-    transform: translateX(6px);
-  }
-
-  &:active {
-    background-color: transparent;
-    translate: 0 0;
-  }
+.button--full {
+  display: flex;
+  width: 100%;
 }

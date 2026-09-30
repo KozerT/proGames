@@ -57,11 +57,8 @@
 .courses__row-cta {
   align-self: flex-start;
   margin-top: 0.25rem;
-  color: var(--color-ink);
-
-  &:hover {
-    color: var(--color-grey-700);
-  }
+  --btn-text: var(--color-ink);
+  --btn-hover-text: var(--color-grey-700);
 }
 
 .courses__media {

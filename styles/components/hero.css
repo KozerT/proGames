@@ -55,13 +55,9 @@
   color: var(--color-paper);
 }
 
-.button__hero {
-  color: var(--color-paper);
-
-  &:hover {
-    color: var(--color-lime);
-    border-color: var(---color-lime);
-  }
+.hero__cta {
+  --btn-text: var(--color-paper);
+  --btn-hover-text: var(--color-lime);
 }
 
 .hero__media {
@@ -96,7 +92,7 @@
     max-width: 30ch;
   }
 
-  .button__link {
+  .hero__cta {
     align-self: flex-start;
   }
 
