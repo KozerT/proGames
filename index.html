@@ -400,6 +400,109 @@
           </div>
         </div>
       </section>
+
+      <section class="apply" id="apply">
+        <div class="container">
+          <h2 class="apply__title" id="apply-title">Submit a request.</h2>
+          <p>Take us which course you want. We&apos;ll take it from there.</p>
+          <form
+            action="mailto:kozer.tetiana@gmail.com?subject=PRO.school"
+            method="post"
+            enctype="text/plain"
+            class="form"
+          >
+            <div class="form__field">
+              <div class="form__field-line">
+                <div class="form__field-body">
+                  <label for="apply-name" class="form__label">
+                    name and surname
+                    <span class="form__decor-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="apply-name"
+                    required
+                    name="name"
+                    autocomplete="name"
+                    placeholder=" "
+                    class="form__input"
+                  />
+                </div>
+              </div>
+              <p class="form__error form__error--missing">
+                Enter your name so we know who to reply to.
+              </p>
+            </div>
+
+            <div class="form__field">
+              <div class="form__field-line">
+                <div class="form__field-body">
+                  <label for="apply-phone" class="form__label">
+                    email
+                    <span class="form__decor-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="apply-email"
+                    required
+                    name="email"
+                    autocomplete="email"
+                    placeholder=" "
+                    class="form__input"
+                  />
+                </div>
+              </div>
+              <p class="form__error form__error--missing">
+                Enter your email so we can reply.
+              </p>
+            </div>
+
+            <div class="form__field">
+              <div class="form__field-line">
+                <span class="form__prefix" aria-hidden="true">+46</span>
+                <div class="form__field-body">
+                  <label for="apply-phone" class="form__label">
+                    phone (optional)
+                  </label>
+                  <input
+                    type="tel"
+                    id="apply-phone"
+                    required
+                    name="phone"
+                    autocomplete="tel-national"
+                    placeholder="7X XXX XX XX"
+                    class="form__input"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <div class="form__field-line">
+                <div class="form__field-body">
+                  <label for="apply-course" class="form__label">
+                    course
+                    <span class="form__decor-star" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="apply-course"
+                    required
+                    name="course"
+                    autocomplete="off"
+                    placeholder="Which course interests you?"
+                    class="form__input"
+                    required
+                  />
+                </div>
+              </div>
+              <p class="form__error form__error--missing">
+                Enter your email so we can reply.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
