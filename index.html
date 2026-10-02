@@ -215,11 +215,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="courses container"
-        id="courses"
-        aria-labelledby="courses-title"
-      >
+      <section class="courses container" id="courses">
         <h2 class="courses__title">PICK YOUR FIRST SKILL</h2>
         <div class="courses__container">
           <div class="courses__list">
@@ -400,13 +396,12 @@
           </div>
         </div>
       </section>
-
       <section class="apply" id="apply">
-        <div class="container">
+        <div class="container apply__container">
           <h2 class="apply__title" id="apply-title">Submit a request.</h2>
           <p>Take us which course you want. We&apos;ll take it from there.</p>
           <form
-            action="mailto:kozer.tetiana@gmail.com?subject=PRO.school"
+            action="mailto:kozer.tetiana@gmail.com"
             method="post"
             enctype="text/plain"
             class="form"
@@ -433,11 +428,10 @@
                 Enter your name so we know who to reply to.
               </p>
             </div>
-
             <div class="form__field">
               <div class="form__field-line">
                 <div class="form__field-body">
-                  <label for="apply-phone" class="form__label">
+                  <label for="apply-email" class="form__label">
                     email
                     <span class="form__decor-star" aria-hidden="true">*</span>
                   </label>
@@ -456,7 +450,6 @@
                 Enter your email so we can reply.
               </p>
             </div>
-
             <div class="form__field">
               <div class="form__field-line">
                 <span class="form__prefix" aria-hidden="true">+46</span>
@@ -476,7 +469,6 @@
                 </div>
               </div>
             </div>
-
             <div class="form__field">
               <div class="form__field-line">
                 <div class="form__field-body">
@@ -492,7 +484,6 @@
                     autocomplete="off"
                     placeholder="Which course interests you?"
                     class="form__input"
-                    required
                   />
                 </div>
               </div>
@@ -500,9 +491,18 @@
                 Enter your email so we can reply.
               </p>
             </div>
+            <div class="form__footer">
+              <p>Fields marked <span>*</span> are required.</p>
+              <button type="submit" class="button button--huge form__submit">
+                apply
+              </button>
+            </div>
           </form>
         </div>
       </section>
+      <footer class="footer">
+        <img src="./assets/images/logo.svg" alt="" />
+      </footer>
     </main>
   </body>
 </html>

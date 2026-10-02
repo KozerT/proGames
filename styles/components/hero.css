@@ -49,7 +49,7 @@
   max-width: 38ch;
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: var(--text-lead);
+  font-size: var(--text-subheading);
   line-height: var(--lh-subheading);
   color: var(--color-paper);
 }

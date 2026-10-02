@@ -38,7 +38,7 @@
   margin: 44px 0 0;
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: var(--text-lead);
+  font-size: var(--text-subheading);
   line-height: var(--lh-body-about);
   color: var(--color-paper);
 }

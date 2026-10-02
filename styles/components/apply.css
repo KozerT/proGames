@@ -1,0 +1,65 @@
+.apply {
+  background-color: var(--color-ink);
+  padding-top: 40px;
+  padding-bottom: 48px;
+  /* TODO: move the below to the main container and replace on every screen, removing extra spaces   */
+  padding-inline: var(--gutter);
+}
+
+.apply__container {
+  padding-top: 40px;
+  padding-bottom: 48px;
+  width: 100%;
+  max-width: 960px;
+}
+
+.apply__title {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  color: var(--color-paper);
+  font-size: var(--text-h2);
+  line-height: 0.95;
+  letter-spacing: var(--tracking-heading);
+  text-transform: uppercase;
+}
+
+.apply__form {
+  margin-top: 20px;
+}
+
+.form__error {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: var(--text-tag);
+  line-height: 1.45;
+  color: var(--color-pink);
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.form__submit {
+  height: auto;
+  min-height: var();
+}
+
+@media (min-with: 768px) {
+  .apply__container {
+    padding-top: 72px;
+    padding-bottom: 86px;
+  }
+}
+
+@media (min-with: 1440px) {
+  .apply {
+    padding-top: 72px;
+    padding-bottom: 86px;
+  }
+  .apply__form {
+    margin-top: 32px;
+  }
+}
