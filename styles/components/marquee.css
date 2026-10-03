@@ -39,14 +39,13 @@
   background: var(--color-lime);
 }
 
-.marquee--lime {
-  .marquee__group {
-    gap: 16px;
-    padding: 10px 16px 12px 0;
-  }
-  .marquee__word {
-    font-size: 1.15rem;
-  }
+.marquee__group {
+  gap: 16px;
+  padding: 10px 16px 12px 0;
+}
+
+.marquee__word {
+  font-size: 1.15rem;
 }
 
 @keyframes marquee-scroll {
@@ -72,10 +71,8 @@
     height: 11.5px;
   }
 
-  .marquee--lime {
-    .marquee__group {
-      gap: 16px;
-      padding-right: 16.9px;
-    }
+  .marquee__group {
+    gap: 16px;
+    padding-right: 16.9px;
   }
 }

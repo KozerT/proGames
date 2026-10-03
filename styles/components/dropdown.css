@@ -1,21 +1,28 @@
 .dropdown__item {
   border-bottom: 1px solid var(--color-ink);
-}
 
-.dropdown__item:first-child {
-  border-top: 1px solid var(--color-ink);
-}
+  &:first-child {
+    border-top: 1px solid var(--color-ink);
+  }
 
-.dropdown__item::details-content {
-  block-size: 0;
-  overflow: clip;
-  transition:
-    block-size var(--dur-2) var(--ease-out),
-    content-visibility var(--dur-2) allow-discrete;
+  &::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size var(--dur-2) var(--ease-out),
+      content-visibility var(--dur-2) allow-discrete;
+  }
 }
 
 .dropdown__item[open]::details-content {
   block-size: auto;
+}
+
+.dropdown__item[open] {
+  .dropdown__icon::after {
+    opacity: 0;
+    rotate: 90deg;
+  }
 }
 
 .dropdown__summary {
@@ -28,6 +35,12 @@
   min-height: var(--tap-area);
   padding: 18px 0;
   list-style: none;
+
+  @media (hover: hover) {
+    &:hover .dropdown__label {
+      opacity: 0.6;
+    }
+  }
 }
 
 .dropdown__label {
@@ -46,34 +59,27 @@
   flex: none;
   width: 20px;
   height: 20px;
-}
 
-.dropdown__icon::before,
-.dropdown__icon::after {
-  content: "";
-  position: absolute;
-  background: var(--color-ink);
-}
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: var(--color-ink);
+  }
 
-.dropdown__icon::before {
-  inset: 50% 0 auto;
-  height: 1.5px;
-  translate: 0 -50%;
-}
+  &::before {
+    inset: 50% 0 auto;
+    height: 1.5px;
+    translate: 0 -50%;
+  }
 
-.dropdown__icon::after {
-  inset: 0 auto 0 50%;
-  width: 1.5px;
-  translate: -50% 0;
-  transition:
-    opacity var(--dur-1) ease-out,
-    rotate var(--dur-2) var(--ease-out);
-}
-
-.dropdown__item[open] {
-  .dropdown__icon::after {
-    opacity: 0;
-    rotate: 90deg;
+  &::after {
+    inset: 0 auto 0 50%;
+    width: 1.5px;
+    translate: -50% 0;
+    transition:
+      opacity var(--dur-1) ease-out,
+      rotate var(--dur-2) var(--ease-out);
   }
 }
 
@@ -86,12 +92,4 @@
   font-size: var(--text-body);
   line-height: var(--lh-body);
   color: var(--color-ink);
-}
-
-@media (hover: hover) {
-  .dropdown__summary:hover {
-    .dropdown__label {
-      opacity: 0.6;
-    }
-  }
 }

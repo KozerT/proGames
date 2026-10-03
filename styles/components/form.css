@@ -65,12 +65,48 @@
   font-size: var(--text-body);
   line-height: 1.5;
 
+  &::placeholder {
+    color: var(--color-grey-500);
+    opacity: 1;
+  }
+
   &:active {
     background: transparent;
   }
 }
 
-.form__input::placeholder {
-  color: var(--color-grey-400);
-  opacity: 1;
+.form__error {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: var(--text-tag);
+  line-height: 1.45;
+  color: var(--color-pink);
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.form__submit {
+  height: auto;
+  min-height: var();
+}
+
+@media (min-width: 768px) {
+  .form__footer {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form {
+    gap: 16px;
+  }
+  .form__footer {
+    gap: 22px;
+    margin-top: 18px;
+  }
 }

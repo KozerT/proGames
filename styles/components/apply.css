@@ -27,26 +27,6 @@
   margin-top: 20px;
 }
 
-.form__error {
-  display: none;
-  font-family: var(--font-mono);
-  font-size: var(--text-tag);
-  line-height: 1.45;
-  color: var(--color-pink);
-}
-
-.form__footer {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-top: 10px;
-}
-
-.form__submit {
-  height: auto;
-  min-height: var();
-}
-
 @media (min-with: 768px) {
   .apply__container {
     padding-top: 72px;
