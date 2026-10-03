@@ -12,12 +12,8 @@
   <body>
     <header class="header">
       <div class="header__bar container">
-        <a href="#main" aria-label="Pro.school, home" class="header__logo">
-          <img
-            src="./assets/images/logo.svg"
-            alt="PRO.school logo"
-            class="logo"
-          />
+        <a href="#main" aria-label="Pro.school, home">
+          <img src="./assets/images/logo.svg" alt="PRO.school logo" />
         </a>
         <nav class="header__nav">
           <a href="./about/index.html" class="header__nav--link">about</a>
@@ -492,8 +488,11 @@
               </p>
             </div>
             <div class="form__footer">
-              <!-- TODO: style this  -->
-              <p>Fields marked <span>*</span> are required.</p>
+              <p class="form__info">
+                Fields marked
+                <span class="form__decor-star" aria-hidden="true">*</span> are
+                required.
+              </p>
               <button type="submit" class="button button--huge form__submit">
                 apply
               </button>
@@ -502,7 +501,52 @@
         </div>
       </section>
       <footer class="footer">
-        <img src="./assets/images/logo.svg" alt="" />
+        <div class="container">
+          <div class="footer__bar">
+            <nav class="footer__nav" aria-label="footer">
+              <a
+                href="https://www.linkedin.com/"
+                class="footer__nav-link"
+                target="_blank"
+                aria-label="PRO.school on LinkedIn"
+              >
+                <span class="footer__nav-icon">
+                  <img
+                    src="./assets/icons/linkedin.svg"
+                    class="footer__nav-image"
+                    alt="LinkedIn icon"
+                    width="18"
+                    height="18"
+                  />
+                </span>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                class="footer__nav-link"
+                target="_blank"
+                aria-label="PRO.school on Instagram"
+              >
+                <span class="footer__nav-icon"
+                  ><img
+                    src="./assets/icons/instagram.svg"
+                    class="footer__nav-image"
+                    alt="Instagram icon"
+                    width="18"
+                    height="18"
+                /></span>
+              </a>
+            </nav>
+            <a href="#main" aria-label="Pro.school, home">
+              <img
+                src="./assets/images/logo.svg"
+                alt="PRO.school logo"
+                class="logo"
+              />
+            </a>
+          </div>
+          <p class="footer__copy">© 2026 PRO.Dev school.</p>
+        </div>
       </footer>
     </main>
   </body>

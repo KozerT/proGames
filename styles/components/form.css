@@ -34,7 +34,7 @@
 .form__label {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: var(--text-label);
   line-height: var(--lh-tag);
   color: var(--color-grey-400);
   text-transform: lowercase;
@@ -88,6 +88,13 @@
   flex-direction: column;
   gap: 14px;
   margin-top: 10px;
+}
+
+.form__info {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  color: var(--color-grey-400);
+  line-height: var(--lh-form-info);
 }
 
 .form__submit {

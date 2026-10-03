@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  padding-inline: var(--gutter);
 }
 
 .hero__container {
