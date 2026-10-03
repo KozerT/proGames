@@ -47,26 +47,22 @@
   --tracking-button: 0.02em;
   --tracking-medium: 0.01em;
 
-  --space-1: 0.25rem; /* 4px*/
-  --space-2: 0.5rem; /* 8px*/
-  --space-3: 0.75rem; /* 12px*/
-  --space-4: 1rem; /*16px */
-  /* TODO: re-think sizing and replace 20px! Var for 20px - 1.25 needed! 
-  10px
-  not for every , if 
-  */
-
-  --space-5: 1.5rem; /* 24px*/
-  --space-6: 2rem; /* 32px */
-  --space-7: 3rem; /* 48px */
-  --space-8: 4rem; /* 64px */
-  --space-9: 6rem; /* 96px */
-  --space-10: 7.5rem; /* 96px */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-10: 0.625rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-72: 4.5rem;
 
   --header-h: 54px;
   --header-gap: 1.5rem;
   --nav-gap: 0.875rem;
-  --hero-subhead-gap: 1.5rem;
   --header-burger-gap: 0.313rem;
 
   --hero-title-gap: 2.3rem;
@@ -110,7 +106,6 @@
     --hero-pad-bottom: 3.5rem;
     --hero-gap: 3rem;
     --hero-copy-gap: 2rem;
-    --hero-subhead-gap: 2rem;
 
     --gutter: 1.4rem;
     --nav-gap: 1.25rem;

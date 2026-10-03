@@ -9,7 +9,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
+  gap: var(--space-8);
   border: none;
   background-color: var(--btn-bg);
   color: var(--btn-text);
@@ -46,21 +46,21 @@
   --btn-hover-shift: 6px 0;
   --btn-active-shift: 6px 0;
 
-  gap: 10px;
-  padding-bottom: var(--space-1);
+  gap: var(--space-10);
+  padding-bottom: var(--space-4);
   border-bottom: 1px solid currentColor;
   font-size: var(--text-btn-block);
 }
 
 .button--sm {
   height: 32px;
-  padding: 0 var(--space-3);
+  padding: 0 var(--space-12);
   font-size: var(--text-nav);
 }
 
 .button--lg {
   height: var(--tap-area);
-  padding: 0 var(--space-5);
+  padding: 0 var(--space-24);
   font-size: var(--text-btn-block);
 }
 
@@ -73,6 +73,6 @@
   width: 100%;
   height: 96px;
   line-height: 0.92;
-  padding: 20px var(--space-5);
+  padding: var(--space-20) var(--space-24);
   font-size: var(--text-giant-cta);
 }

@@ -1,8 +1,8 @@
 .eyebrow {
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(12px, 1.6vw, 20px);
-  margin: 0 0 16px;
+  gap: clamp(var(--space-12), 1.6vw, var(--space-20));
+  margin: 0 0 var(--space-16);
   font-family: var(--font-mono);
   font-size: var(--text-tag);
   line-height: var(--lh-tag);

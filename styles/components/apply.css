@@ -1,12 +1,12 @@
 .apply {
   background-color: var(--color-ink);
-  padding-top: 40px;
+  padding-top: var(--space-40);
   /* TODO: move the below to the main container and replace on every screen, removing extra spaces   */
 }
 
 .apply__container {
-  padding-top: 40px;
-  padding-bottom: 48px;
+  padding-top: var(--space-40);
+  padding-bottom: var(--space-48);
   width: 100%;
   max-width: 960px;
 }
@@ -22,22 +22,22 @@
 }
 
 .apply__form {
-  margin-top: 20px;
+  margin-top: var(--space-20);
 }
 
 @media (min-with: 768px) {
   .apply__container {
-    padding-top: 72px;
+    padding-top: var(--space-72);
     padding-bottom: 86px;
   }
 }
 
 @media (min-with: 1440px) {
   .apply {
-    padding-top: 72px;
+    padding-top: var(--space-72);
     padding-bottom: 86px;
   }
   .apply__form {
-    margin-top: 32px;
+    margin-top: var(--space-32);
   }
 }

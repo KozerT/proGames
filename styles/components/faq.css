@@ -3,7 +3,7 @@
 }
 
 .faq__head {
-  padding: 28px var(--gutter) 16px;
+  padding: 28px var(--gutter) var(--space-16);
 }
 
 .faq__title {
@@ -21,24 +21,24 @@
   width: 100%;
   max-width: 960px;
   margin-inline: auto;
-  padding-bottom: 32px;
+  padding-bottom: var(--space-32);
 }
 
 @media (min-width: 768px) {
   .faq__head {
-    padding: 32px var(--gutter) 20px;
+    padding: var(--space-32) var(--gutter) var(--space-20);
   }
   .faq__list {
-    padding-bottom: 40px;
+    padding-bottom: var(--space-40);
   }
 }
 
 @media (min-width: 1440px) {
   .faq__head {
-    padding: 57.6px var(--gutter) 32px;
+    padding: 57.6px var(--gutter) var(--space-32);
   }
   .faq__list {
-    padding-bottom: 72px;
+    padding-bottom: var(--space-72);
     padding-inline: 0;
   }
 }

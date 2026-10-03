@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: var(--marquee-group-gap);
-  padding: 8px 20px 10px 0;
+  padding: var(--space-8) var(--space-20) var(--space-10) 0;
 }
 
 .marquee__word {
@@ -40,8 +40,8 @@
 }
 
 .marquee__group {
-  gap: 16px;
-  padding: 10px 16px 12px 0;
+  gap: var(--space-16);
+  padding: var(--space-10) var(--space-16) var(--space-12) 0;
 }
 
 .marquee__word {
@@ -72,7 +72,7 @@
   }
 
   .marquee__group {
-    gap: 16px;
-    padding-right: 16.9px;
+    gap: var(--space-16);
+    padding-right: var(--space-16);
   }
 }

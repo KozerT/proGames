@@ -31,7 +31,7 @@
   justify-content: space-between;
   cursor: pointer;
   color: var(--color-ink);
-  gap: var(--space-5);
+  gap: var(--space-24);
   min-height: var(--tap-area);
   padding: 18px 0;
   list-style: none;
@@ -80,7 +80,7 @@
 .dropdown__content {
   max-width: 72ch;
   margin: 0;
-  padding: 0 40px 22px 0;
+  padding: 0 var(--space-40) 22px 0;
   font-family: var(--font-sans);
   font-weight: 400;
   font-size: var(--text-body);
