@@ -1,10 +1,9 @@
 .hero {
   position: relative;
-  padding-inline: var(--gutter);
 }
 
 .hero__container {
-  padding: var(--hero-pad-top) 0 var(--hero-pad-bottom);
+  padding: var(--hero-pad-top) var(--gutter) var(--hero-pad-bottom);
 }
 
 .hero__title {

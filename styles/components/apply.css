@@ -2,7 +2,6 @@
   background-color: var(--color-ink);
   padding-top: 40px;
   /* TODO: move the below to the main container and replace on every screen, removing extra spaces   */
-  padding-inline: var(--gutter);
 }
 
 .apply__container {
