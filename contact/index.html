@@ -35,8 +35,8 @@
         </button>
         <nav class="header__menu" id="header-menu" popover aria-label="Main">
           <a class="header__menu--link" href="../index.html">home</a>
-          <a href="../courses/index.html" class="header__nav--link">courses</a>
-          <a href="#main" class="header__nav--link">contact</a>
+          <a href="../courses/index.html" class="header__menu--link">courses</a>
+          <a href="#main" class="header__menu--link">contact</a>
           <a class="header__menu--link" href="../index.html#faq">faq</a>
           <div class="header__menu--action">
             <a class="button button--lg button--full" href="#apply">apply</a>
@@ -45,22 +45,22 @@
       </div>
     </header>
     <main>
-      <section class="main">
+      <section class="main contact__hero">
         <div class="container">
           <div class="hero__container">
             <p class="eyebrow">
               <span class="eyebrow__item"
-                >( <span class="eyebrow__label">all courses</span> )</span
+                >( <span class="eyebrow__label">contact</span> )</span
               >
             </p>
-            <h1 class="hero__title title__pink">
+            <h1 class="hero__title title__paper">
               <span class="hero__title-lines">
                 <span class="hero__title-line">ask before</span>
                 <span class="hero__title-line">you apply</span>
               </span>
             </h1>
             <p class="subtitle">
-              Confused by the choices?Get guidance from a real human from our
+              Confused by the choices? Get guidance from a real human from our
               team.
             </p>
           </div>
@@ -73,15 +73,133 @@
             <h2 class="apply__title contact__title">Write to us</h2>
             <div class="contact__list">
               <div class="contact__item">
-                <span>( email )</span>
+                <span class="tag">( email )</span>
                 <span class="contact__item-value">
                   <a class="contact__item-link" href="mailto:hello@example.com"
                     >hello@example.com</a
                   >
                 </span>
               </div>
+              <div class="contact__item">
+                <span class="tag">( reply time )</span>
+                <span class="contact__item-value">
+                  Within one working day
+                </span>
+              </div>
+              <div class="contact__item">
+                <span class="tag">( email )</span>
+                <span class="contact__item-value">Online, in English</span>
+              </div>
             </div>
           </aside>
+          <div class="contact__apply">
+            <p class="apply__subtitle">
+              Leave your details. We&apos;ll answer by email.
+            </p>
+
+            <form
+              action="mailto:kozer.tetiana@gmail.com"
+              method="post"
+              enctype="application/x-www-form-urlencoded"
+              class="form"
+            >
+              <div class="form__field">
+                <div class="form__field-line">
+                  <div class="form__field-body">
+                    <label for="apply-name" class="form__label">
+                      name and surname
+                      <span class="form__decor-star" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="apply-name"
+                      required
+                      name="name"
+                      autocomplete="name"
+                      placeholder=" "
+                      class="form__input"
+                    />
+                  </div>
+                </div>
+                <p class="form__error form__error--missing">
+                  Enter your name so we know who to reply to.
+                </p>
+              </div>
+              <div class="form__field">
+                <div class="form__field-line">
+                  <div class="form__field-body">
+                    <label for="apply-email" class="form__label">
+                      email
+                      <span class="form__decor-star" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="apply-email"
+                      required
+                      name="email"
+                      autocomplete="email"
+                      placeholder=" "
+                      class="form__input"
+                    />
+                  </div>
+                </div>
+                <p class="form__error form__error--missing">
+                  Enter your email so we can reply.
+                </p>
+              </div>
+              <div class="form__field">
+                <div class="form__field-line">
+                  <span class="form__prefix" aria-hidden="true">+46</span>
+                  <div class="form__field-body">
+                    <label for="apply-phone" class="form__label">
+                      phone (optional)
+                    </label>
+                    <input
+                      type="tel"
+                      id="apply-phone"
+                      required
+                      name="phone"
+                      autocomplete="tel-national"
+                      placeholder="7X XXX XX XX"
+                      class="form__input"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form__field">
+                <div class="form__field-line">
+                  <div class="form__field-body">
+                    <label for="apply-course" class="form__label">
+                      course
+                      <span class="form__decor-star" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="apply-course"
+                      required
+                      name="course"
+                      autocomplete="off"
+                      placeholder="Which course interests you?"
+                      class="form__input"
+                    />
+                  </div>
+                </div>
+                <p class="form__error form__error--missing">
+                  Enter your email so we can reply.
+                </p>
+              </div>
+              <div class="form__footer">
+                <p class="form__info">
+                  Fields marked
+                  <span class="form__decor-star" aria-hidden="true">*</span> are
+                  required.
+                </p>
+                <button type="submit" class="button button--huge form__submit">
+                  apply
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>

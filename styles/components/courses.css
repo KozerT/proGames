@@ -23,7 +23,7 @@
 .courses-row {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: var(--space-12);
   padding: var(--space-20) var(--gutter);
 }
 
