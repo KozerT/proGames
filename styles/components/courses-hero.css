@@ -4,6 +4,30 @@
   min-height: 44svh;
   background-color: var(--color-ink);
   color: var(--color-paper);
+
+  &::before {
+    top: 0;
+    right: 0;
+    background: url("../../assets/images/pixel-overlay-top-right.svg") right
+      top / contain no-repeat;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    background: url("../../assets/images/pixel-overlay-bottom-left.svg") left
+      bottom / contain no-repeat;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: min(var(--pixel-overlay-w), 50vw);
+    height: var(--pixel-overlay-h);
+    pointer-events: none;
+  }
 }
 
 .courses-hero__image {
@@ -24,7 +48,7 @@
 
 .courses-hero__container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
