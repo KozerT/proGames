@@ -3,6 +3,7 @@
   overflow: hidden;
   background-color: var(--color-paper);
   color: var(--color-ink);
+  border-top: 1px solid var(--color-line);
 }
 
 .marquee__track {
@@ -37,6 +38,7 @@
 
 .marquee--lime {
   background: var(--color-lime);
+  border-top: none;
 }
 
 .marquee__group {

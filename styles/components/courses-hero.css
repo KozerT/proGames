@@ -55,6 +55,6 @@
   .courses-hero {
     min-height: min(66svh, 760px);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
 }
