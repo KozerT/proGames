@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-20);
-  padding: var(--space-36) var(--gutter);
+  padding-block: var(--space-36) var(--gutter);
 
   &:not(:first-child) {
     border-top: 1px solid var(--color-ink);
