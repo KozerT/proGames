@@ -3,9 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact — PRO.school</title>
+    <link rel="icon" href="../favicon.ico" sizes="32x32" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    Contact
+    <header class="header">
+      <div class="header__bar container">
+        <a href="../index.html" aria-label="Pro.school, home">
+          <img src="../assets/images/logo.svg" alt="PRO.school logo" />
+        </a>
+        <nav class="header__nav">
+          <a href="../index.html" class="header__nav--link">home</a>
+          <a href="../courses/index.html" class="header__nav--link">courses</a>
+          <a href="#main" class="header__nav--link">contact</a>
+          <a href="../index.html#faq" class="header__nav--link">faq</a>
+          <a href="#apply" class="button button--sm">apply</a>
+        </nav>
+        <button
+          class="header__burger"
+          type="button"
+          aria-label="Menu"
+          aria-controls="header-menu"
+          popovertarget="header-menu"
+        >
+          <span class="header__burger-bar"></span>
+          <span class="header__burger-bar"></span>
+          <span class="header__burger-bar"></span>
+        </button>
+        <nav class="header__menu" id="header-menu" popover aria-label="Main">
+          <a class="header__menu--link" href="../index.html">home</a>
+          <a href="../courses/index.html" class="header__nav--link">courses</a>
+          <a href="#main" class="header__nav--link">contact</a>
+          <a class="header__menu--link" href="../index.html#faq">faq</a>
+          <div class="header__menu--action">
+            <a class="button button--lg button--full" href="#apply">apply</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="hero__container">
+            <p class="eyebrow">
+              <span class="eyebrow__item"
+                >( <span class="eyebrow__label">all courses</span> )</span
+              >
+            </p>
+            <h1 class="hero__title title__pink">
+              <span class="hero__title-lines">
+                <span class="hero__title-line">ask before</span>
+                <span class="hero__title-line">you apply</span>
+              </span>
+            </h1>
+            <p class="subtitle">
+              Confused by the choices?Get guidance from a real human from our
+              team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="contact-apply" aria-labelledby="contact-title">
+        <div class="contact__grid container">
+          <aside class="contact__aside">
+            <h2 class="apply__title contact__title">Write to us</h2>
+            <div class="contact__list">
+              <div class="contact__item">
+                <span>( email )</span>
+                <span class="contact__item-value">
+                  <a class="contact__item-link" href="mailto:hello@example.com"
+                    >hello@example.com</a
+                  >
+                </span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__bar">
+          <nav class="footer__nav" aria-label="footer">
+            <a
+              href="https://www.linkedin.com/"
+              class="footer__nav-link"
+              target="_blank"
+              aria-label="PRO.school on LinkedIn"
+            >
+              <span class="footer__nav-icon">
+                <span class="footer__nav-image nav-image--linkedin"></span>
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              class="footer__nav-link"
+              target="_blank"
+              aria-label="PRO.school on Instagram"
+            >
+              <span class="footer__nav-icon">
+                <span class="footer__nav-image nav-image--instagram"></span>
+              </span>
+            </a>
+          </nav>
+          <a href="../index.html#main" aria-label="Pro.school, home">
+            <img
+              src="../assets/images/logo.svg"
+              alt="PRO.school logo"
+              class="logo"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <p class="footer__copy">© 2026 PRO.Dev school.</p>
+      </div>
+    </footer>
   </body>
 </html>

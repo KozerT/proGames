@@ -33,7 +33,7 @@
   text-wrap: balance;
 }
 
-.about__subtitle {
+.subtitle {
   max-width: 38ch;
   margin: 44px 0 0;
   font-family: var(--font-sans);

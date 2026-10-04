@@ -21,6 +21,10 @@
   color: var(--color-paper);
 }
 
+.title__pink {
+  color: var(--color-pink);
+}
+
 .hero__title-lines {
   display: block;
 }
