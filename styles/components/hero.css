@@ -45,12 +45,12 @@
   text-align: right;
 }
 
-.hero__subheading {
+.hero__subtitle {
   max-width: 38ch;
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: var(--text-subheading);
-  line-height: var(--lh-subheading);
+  font-size: var(--text-subtitle);
+  line-height: var(--lh-subtitle);
   color: var(--color-paper);
 }
 
@@ -86,7 +86,7 @@
     text-align: left;
   }
 
-  .hero__subheading {
+  .hero__subtitle {
     width: min(383px, 100%);
     max-width: 30ch;
   }

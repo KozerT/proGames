@@ -42,7 +42,7 @@
   font-weight: 700;
   font-size: var(--text-body);
   color: var(--color-ink);
-  line-height: var(--text-subheading);
+  line-height: var(--text-subtitle);
 }
 
 .courses__row-text {

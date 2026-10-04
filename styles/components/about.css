@@ -27,18 +27,18 @@
   font-weight: 800;
   font-size: var(--text-h2-secondary);
   line-height: var(--lh-h2-section);
-  letter-spacing: var(--tracking-heading-2);
+  letter-spacing: var(--tracking-heading-3);
   text-transform: uppercase;
   color: var(--color-paper);
   text-wrap: balance;
 }
 
-.about__subheading {
+.about__subtitle {
   max-width: 38ch;
   margin: 44px 0 0;
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: var(--text-subheading);
+  font-size: var(--text-subtitle);
   line-height: var(--lh-body-about);
   color: var(--color-paper);
 }

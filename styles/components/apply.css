@@ -1,7 +1,6 @@
 .apply {
   background-color: var(--color-ink);
   padding-top: var(--space-40);
-  /* TODO: move the below to the main container and replace on every screen, removing extra spaces   */
 }
 
 .apply__container {
@@ -17,12 +16,18 @@
   color: var(--color-paper);
   font-size: var(--text-h2);
   line-height: 0.95;
-  letter-spacing: var(--tracking-heading);
+  letter-spacing: var(--tracking-heading-2);
   text-transform: uppercase;
 }
-
-.apply__form {
-  margin-top: var(--space-20);
+.apply__subtitle {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--text-body);
+  line-height: var(--lh-subtitle);
+  letter-spacing: var(--tracking-heading-3);
+  text-transform: uppercase;
+  color: var(--color-paper);
+  margin: var(--space-20) 0 var(--space-20) 0;
 }
 
 @media (min-with: 768px) {

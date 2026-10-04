@@ -16,8 +16,8 @@
           <img src="./assets/images/logo.svg" alt="PRO.school logo" />
         </a>
         <nav class="header__nav">
-          <a href="./about/index.html" class="header__nav--link">about</a>
           <a href="./courses/index.html" class="header__nav--link">courses</a>
+          <a href="./about/index.html" class="header__nav--link">about</a>
           <a href="#faq" class="header__nav--link">faq</a>
           <a href="#apply" class="button button--sm">apply</a>
         </nav>
@@ -33,8 +33,8 @@
           <span class="header__burger-bar"></span>
         </button>
         <nav class="header__menu" id="header-menu" popover aria-label="Main">
-          <a class="header__menu--link" href="#about">about</a>
-          <a class="header__menu--link" href="#courses">courses</a>
+          <a class="header__menu--link" href="./courses/index.html">courses</a>
+          <a class="header__menu--link" href="./about/index.html">about</a>
           <a class="header__menu--link" href="#faq">faq</a>
           <div class="header__menu--action">
             <a class="button button--lg button--full" href="#apply">apply</a>
@@ -65,7 +65,7 @@
           </h1>
           <div class="hero__body">
             <div class="hero__copy">
-              <p class="hero__subheading">
+              <p class="hero__subtitle">
                 Learn from working studios, finish a real project, get your
                 first portfolio piece.
               </p>
@@ -152,7 +152,7 @@
               <h2 class="about__title" id="about-title">
                 You bring the idea. We bring the stack.
               </h2>
-              <p class="about__subheading">
+              <p class="about__subtitle">
                 Every PRO.Dev course is built and taught by people who work in
                 studios today. They walk you through their real workflow: the
                 tools, the deadlines, the feedback. You finish with a project of
@@ -395,11 +395,13 @@
       <section class="apply" id="apply">
         <div class="container apply__container">
           <h2 class="apply__title" id="apply-title">Submit a request.</h2>
-          <p>Take us which course you want. We&apos;ll take it from there.</p>
+          <p class="apply__subtitle">
+            Tell us which course you want. We&apos;ll take it from there.
+          </p>
           <form
             action="mailto:kozer.tetiana@gmail.com"
             method="post"
-            enctype="text/plain"
+            enctype="application/x-www-form-urlencoded"
             class="form"
           >
             <div class="form__field">
@@ -500,54 +502,54 @@
           </form>
         </div>
       </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__bar">
-            <nav class="footer__nav" aria-label="footer">
-              <a
-                href="https://www.linkedin.com/"
-                class="footer__nav-link"
-                target="_blank"
-                aria-label="PRO.school on LinkedIn"
-              >
-                <span class="footer__nav-icon">
-                  <img
-                    src="./assets/icons/linkedin.svg"
-                    class="footer__nav-image"
-                    alt="LinkedIn icon"
-                    width="18"
-                    height="18"
-                  />
-                </span>
-              </a>
-
-              <a
-                href="https://www.instagram.com/"
-                class="footer__nav-link"
-                target="_blank"
-                aria-label="PRO.school on Instagram"
-              >
-                <span class="footer__nav-icon"
-                  ><img
-                    src="./assets/icons/instagram.svg"
-                    class="footer__nav-image"
-                    alt="Instagram icon"
-                    width="18"
-                    height="18"
-                /></span>
-              </a>
-            </nav>
-            <a href="#main" aria-label="Pro.school, home">
-              <img
-                src="./assets/images/logo.svg"
-                alt="PRO.school logo"
-                class="logo"
-              />
-            </a>
-          </div>
-          <p class="footer__copy">© 2026 PRO.Dev school.</p>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__bar">
+          <nav class="footer__nav" aria-label="footer">
+            <a
+              href="https://www.linkedin.com/"
+              class="footer__nav-link"
+              target="_blank"
+              aria-label="PRO.school on LinkedIn"
+            >
+              <span class="footer__nav-icon">
+                <img
+                  src="./assets/icons/linkedin.svg"
+                  class="footer__nav-image"
+                  alt="LinkedIn icon"
+                  width="18"
+                  height="18"
+                />
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              class="footer__nav-link"
+              target="_blank"
+              aria-label="PRO.school on Instagram"
+            >
+              <span class="footer__nav-icon"
+                ><img
+                  src="./assets/icons/instagram.svg"
+                  class="footer__nav-image"
+                  alt="Instagram icon"
+                  width="18"
+                  height="18"
+              /></span>
+            </a>
+          </nav>
+          <a href="#main" aria-label="Pro.school, home">
+            <img
+              src="./assets/images/logo.svg"
+              alt="PRO.school logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <p class="footer__copy">© 2026 PRO.Dev school.</p>
+      </div>
+    </footer>
   </body>
 </html>
