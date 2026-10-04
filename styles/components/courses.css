@@ -72,8 +72,11 @@
   width: 75%;
   height: auto;
   margin: 0 auto;
-  object-fit: cover;
   aspect-ratio: var(--ratio-portrait);
+  background-image: url("../../assets/images/courses-badge.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {

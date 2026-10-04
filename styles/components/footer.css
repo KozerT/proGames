@@ -50,11 +50,22 @@
   display: block;
   width: 18px;
   height: 18px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   transition: color var(--dur-1) var(--ease-out);
 
   &:hover {
     filter: brightness(0);
   }
+}
+
+.nav-image--linkedin {
+  background-image: url("../../assets/icons/linkedin.svg");
+}
+
+.nav-image--instagram {
+  background-image: url("../../assets/icons/instagram.svg");
 }
 
 .footer__copy {
