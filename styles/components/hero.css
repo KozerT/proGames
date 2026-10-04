@@ -3,7 +3,8 @@
 }
 
 .hero__container {
-  padding: var(--hero-pad-top) var(--gutter) var(--hero-pad-bottom);
+  padding-top: var(--hero-pad-top);
+  padding-bottom: var(--hero-pad-bottom);
 }
 
 .hero__title {
@@ -14,6 +15,10 @@
   font-weight: 400;
   line-height: var(--lh-h1);
   color: var(--color-lime);
+}
+
+.title__paper {
+  color: var(--color-paper);
 }
 
 .hero__title-lines {

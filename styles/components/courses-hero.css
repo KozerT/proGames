@@ -1,0 +1,36 @@
+.courses-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 44svh;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.courses-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.courses-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-ink);
+  opacity: var(--overlay-opacity);
+}
+
+.courses-hero__container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .courses-hero {
+    min-height: min(66svh, 760px);
+    display: flex;
+    align-items: flex-end;
+  }
+}
