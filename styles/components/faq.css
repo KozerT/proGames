@@ -19,7 +19,6 @@
 
 .faq__list {
   width: 100%;
-  max-width: 960px;
   margin-inline: auto;
   padding-bottom: var(--space-32);
 }
@@ -39,6 +38,5 @@
   }
   .faq__list {
     padding-bottom: var(--space-72);
-    padding-inline: 0;
   }
 }
